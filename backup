@@ -1,0 +1,33 @@
+$('#form').submit(function(e){
+    e.preventDefault();
+    alert("ok")
+    check_title();
+    error_title=false;
+    if(error_title==false)
+    {
+        var form_data=new FormData(this);
+        // $.ajax({
+        //     url:"Codes/register_code.php",
+        //     method:"POST",
+        //     data:form_data,
+        //     contentType:false,
+        //     processData:false,
+        //     success:function(response)
+        //     {
+        //         console.log(response);
+        //         if(response==1)
+        //     {
+        //         $(".message").html('<div class="alert alert-success" role="alert"><i class="fa fa-check-circel mx-2"></i>Saved</div>');
+        //         setTimeout(function(){
+        //             $('.message').hide();
+        //             $("#button").attr("disabled",false);
+        //             window.location="view.php";
+        //         },1000)
+            
+        //     }
+        //     },error:function(){
+        //         console.log("error");
+        //     }
+        // })
+     }
+})
